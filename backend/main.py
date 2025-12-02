@@ -355,7 +355,7 @@ def main():
     CLASSIFIER_MODEL = "models/autoencoder_pastillas.pkl"  # Autoencoder
     
     # Imágenes a procesar
-    IMAGE_DIR = "/dataset/NOOK"
+    IMAGE_DIR = "dataset/NOOK/"
     
     # Opción 1: Procesar todas las imágenes de una carpeta
     image_paths = glob.glob(os.path.join(IMAGE_DIR, "*.jpg"))
