@@ -351,19 +351,19 @@ def main():
     import glob
     
     # Configuración
-    DETECTOR_MODEL = "/Users/luke/Desktop/ELADIET/models/best-3.pt"
-    CLASSIFIER_MODEL = "/Users/luke/Desktop/ELADIET/models/autoencoder_pastillas.pkl"  # Autoencoder
+    DETECTOR_MODEL = "models/best-3.pt"
+    CLASSIFIER_MODEL = "models/autoencoder_pastillas.pkl"  # Autoencoder
     
     # Imágenes a procesar
-    IMAGE_DIR = "/Users/luke/Desktop/ELADIET/dataset/NOOK"
+    IMAGE_DIR = "/dataset/NOOK"
     
     # Opción 1: Procesar todas las imágenes de una carpeta
     image_paths = glob.glob(os.path.join(IMAGE_DIR, "*.jpg"))
     
     # Opción 2: Procesar imágenes específicas
     # image_paths = [
-    #     "/Users/luke/Desktop/ELADIET/dataset/NOOK/imagen1.jpg",
-    #     "/Users/luke/Desktop/ELADIET/dataset/NOOK/imagen2.jpg",
+    #     "dataset/NOOK/imagen1.jpg",
+    #     "dataset/NOOK/imagen2.jpg",
     # ]
     
     if not image_paths:

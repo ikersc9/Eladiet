@@ -22,8 +22,8 @@ app.config['MAX_CONTENT_LENGTH'] = 100 * 1024 * 1024  # 100MB max
 app.config['ALLOWED_EXTENSIONS'] = {'png', 'jpg', 'jpeg', 'bmp'}
 
 # Configuración de modelos
-DETECTOR_MODEL = "/Users/luke/Desktop/ELADIET/models/best-3.pt"
-CLASSIFIER_MODEL = "/Users/luke/Desktop/ELADIET/models/autoencoder_pastillas.pkl"  # Autoencoder
+DETECTOR_MODEL = "models/best-3.pt"
+CLASSIFIER_MODEL = "models/autoencoder_pastillas.pkl"  # Autoencoder
 
 # Crear directorios
 Path(app.config['UPLOAD_FOLDER']).mkdir(exist_ok=True)
