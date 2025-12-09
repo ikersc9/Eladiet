@@ -120,7 +120,7 @@ Ejemplos de uso:
     parser.add_argument('images', nargs='+', type=str,
                         help='Imágenes a procesar (una o más)')
     parser.add_argument('--model', type=str,
-                        default='/Users/luke/Desktop/ELADIET/models/efficientnet_pastillas.pkl',
+                        default='/models/efficientnet_pastillas.pkl',
                         help='Ruta al modelo entrenado (default: ../models/efficientnet_pastillas.pkl)')
     parser.add_argument('--output', type=str,
                         default='gradcam_visualizations',
