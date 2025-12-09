@@ -321,8 +321,8 @@ def test_full_pipeline(image_path, debug=False):
     print("="*80)
     
     # Configuración exacta de app.py
-    DETECTOR_MODEL = "/Users/luke/Desktop/ELADIET/models/best-3.pt"
-    CLASSIFIER_MODEL = "/Users/luke/Desktop/ELADIET/efficientnet_pill_hybrid.pkl"
+    DETECTOR_MODEL = "/models/best-3.pt"
+    CLASSIFIER_MODEL = "models/efficientnet_pill.pkl"
     
     if not Path(image_path).exists():
         print(f"\n❌ Imagen no encontrada: {image_path}")
@@ -575,7 +575,7 @@ def evaluate_on_labeled_data(model_path, ok_folder, nok_folder):
 if __name__ == "__main__":
     
     # Configuración por defecto
-    DEFAULT_MODEL = "/Users/luke/Desktop/ELADIET/efficientnet_pill_hybrid.pkl"
+    DEFAULT_MODEL = "/models/efficientnet_pill.pkl"
     
     print("\n" + "="*80)
     print("🔬 TEST DEL CLASIFICADOR EFFICIENTNET - VERSIÓN HÍBRIDA")
