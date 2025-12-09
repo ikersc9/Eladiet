@@ -796,8 +796,8 @@ class EfficientNetPillClassifier:
 if __name__ == "__main__":
     
     # CONFIGURACIÓN - Ajusta estas rutas
-    OK_FOLDER = "/Users/luke/Desktop/ELADIET/dataset/crops/images/"
-    NOK_FOLDER = "/Users/luke/Desktop/ELADIET/dataset/crops/NOOK/"
+    OK_FOLDER = "/dataset/crops/OK/"
+    NOK_FOLDER = "/dataset/crops/NOOK/"
     
     print("="*80)
     print("🚀 EFFICIENTNET CLASSIFIER - VERSIÓN HÍBRIDA")
